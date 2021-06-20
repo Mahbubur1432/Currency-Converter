@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+
+</head>
+
+<body>
+    <style type="text/css">
+        body {
+            background-color: rgb(166, 173, 173);
+            margin-left: 35%;
+            margin-top: 5%;
+        }
+    </style>
+    <h1>
+        <font color=blue>Currency Converter</font>
+    </h1>
+    <h2>Select Currency: </h2>
+    <select name="currency" id="convert1" onchange="first()" oninput="first()" onclick="first(0">
+        <option value="taka">Bangladeshi Taka</option>
+        <option value="Rupee">Indian Rupee</option>
+        <option value="Riyal" selected>Saudi Arabia Riyal</option>
+    </select>
+    <input type="number" id="input" onclick="first()" oninput="first()">
+    <br>
+    <br>
+    <h2>Converted Currency: </h2>
+    <select name="currency" id="convert2" onchange="first()" oninput="first()" onclick="first(0">
+        <option value="taka1" selected>Bangladeshi Taka</option>
+        <option value="Rupee1">Indian Rupee</option>
+        <option value="Riyal1">Saudi Arabia Riyal</option>
+    </select>
+    <input type="number" id="output" onclick="first()" oninput="first()">
+    <script>
+        function first() {
+            var input5 = document.getElementById("input").value;
+            var output5 = document.getElementById("output");
+            output5.value;
+            if (document.getElementById("convert1").value == "taka") {
+                if (document.getElementById("convert2").value == "taka1") {
+
+                    output5.value = input5 * 1;
+                }
+                else if (document.getElementById("convert2").value == "Rupee1") {
+                    output5.value = input5 * 0.85942;
+                }
+                else if (document.getElementById("convert2").value == "Riyal1") {
+                    output5.value = input5 * 0.04433;
+                }
+            }
+            if (document.getElementById("convert1").value == "Rupee") {
+                if (document.getElementById("convert2").value == "taka1") {
+
+                    output5.value = input5 * 1.13876;
+                }
+                else if (document.getElementById("convert2").value == "Rupee1") {
+
+                    output5.value = input5 * 1;
+                }
+                else if (document.getElementById("convert2").value == "Riyal1") {
+
+                    output5.value = input5 * 0.05149;
+                }
+            }
+            if (document.getElementById("convert1").value == "Riyal") {
+                if (document.getElementById("convert2").value == "taka1") {
+
+                    output5.value = input5 * 22.1005;
+                }
+                else if (document.getElementById("convert2").value == "Rupee1") {
+
+                    output5.value = input5 * 19.3737;
+                }
+                else if (document.getElementById("convert2").value == "Riyal1") {
+
+                    output5.value = input5 * 1;
+                }
+            }
+        }
+    </script><br><br>
+    <h3><i>
+            <font color="black">&copy; Copyright by Md. Mahbubur Rahman</font>
+        </i></h3>
+</body>
+
+</html>
